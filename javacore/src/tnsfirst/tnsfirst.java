@@ -1,6 +1,7 @@
-package com.tnsiffirst;
+package tnsfirst;
 
-public class first {
+public class tnsfirst {
+
 	    public static void main(String[] args) {
 	        // Integer data types
 	        byte aByte = 120;

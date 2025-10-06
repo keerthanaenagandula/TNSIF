@@ -4,5 +4,5 @@
 /**
  * 
  */
-module javacoretns {
+module tnsif {
 }

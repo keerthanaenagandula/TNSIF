@@ -8,7 +8,7 @@ public class Main {
 			obj.prepare();
 			obj.prepare1();
 			
-			B obj1 =new B();
+			b obj1 =new b();
 			obj1.printing();
 			obj1.printing1();
 			obj1.prepare();

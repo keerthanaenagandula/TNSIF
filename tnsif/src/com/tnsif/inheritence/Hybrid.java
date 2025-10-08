@@ -8,14 +8,14 @@ public class Hybrid {
 	}
 }
 
-class HelloWorld1 extends Hybrid{
+class h extends Hybrid{
 	public void prepare1() {
 		System.out.println("Hello this is from Multilevel Inheritance class from Parent class");
 	}
 	
 }
 
-class A extends Hybrid{
+class a extends Hybrid{
 	public void printing()
 	{
 		System.out.println("Hello This is a Multilevel Inheritance from printing method..");
@@ -23,10 +23,14 @@ class A extends Hybrid{
 	}
 }
 
-class B extends A{
+class b extends a{
 	public void printing1() {
 		System.out.println("Hello This is a Multilevel Inheritance from printing1 method ..");
 
 	}
-}
+
+	
+		
+	}
+
 

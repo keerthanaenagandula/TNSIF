@@ -1,37 +1,36 @@
-
 package com.example.teegalaproject.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
-@Table
+@Table(name = "students")
 public class Student {
+    @Id
+    @Column(name = "sid")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long sid;
+
+    private String name;
+    private String college;
+    private Long roll;
+    private String qualification;
+    private String course;
+    private int year;
+    private String certificate;
+    private long halltickect;
+    
 	
-	@Id
-	@GeneratedValue
-	int sid;
-	String sname;
-	String college;
-	long rollno;
-	String qualification;
-	String course;
-	int year;
-	String certificate;
-	long hallticket;
-	public int getSid() {
+	public Long getId() {
 		return sid;
 	}
-	public void setSid(int sid) {
-		this.sid = sid;
+	public void setId(Long id) {
+		this.sid = id;
 	}
-	public String getSname() {
-		return sname;
+	public String getName() {
+		return name;
 	}
-	public void setSname(String sname) {
-		this.sname = sname;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getCollege() {
 		return college;
@@ -39,11 +38,11 @@ public class Student {
 	public void setCollege(String college) {
 		this.college = college;
 	}
-	public long getRollno() {
-		return rollno;
+	public Long getRoll() {
+		return roll;
 	}
-	public void setRollno(long rollno) {
-		this.rollno = rollno;
+	public void setRoll(Long roll) {
+		this.roll = roll;
 	}
 	public String getQualification() {
 		return qualification;
@@ -63,23 +62,17 @@ public class Student {
 	public void setYear(int year) {
 		this.year = year;
 	}
-	public String getCerificate() {
+	public String getCertificate() {
 		return certificate;
 	}
-	public void setCerificate(String certificate) {
+	public void setCertificate(String certificate) {
 		this.certificate = certificate;
 	}
-	public long getHallticket() {
-		return hallticket;
+	public long getHalltickect() {
+		return halltickect;
 	}
-	public void setHallticket(long hallticket) {
-		this.hallticket = hallticket;
+	public void setHalltickect(long halltickect) {
+		this.halltickect = halltickect;
 	}
-	
-	
-	
-	
+			
 }
-
-
-
